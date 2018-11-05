@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Travel</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="style.css" media="screen">
+</head>
+
+<body>
+<!-- début page -->
+<div id="page">
+<!-- bandeau noir haut -->
+	<nav id="bandeauhaut">
+		<a href="#"><p>Blog</p></a><font color="#fff">|</font>
+		<a href="nous_contacter.html"><p>Nous contacter</p></a><font color="#fff">|</font>
+		<a href="#"><p>Newsletter</p></a><font color="#fff">|</font>
+		<a href="#"><p class="noborder">Site mobile</p></a>
+		<a href="#"><p class="noborder_client">&gt;&gt; Espace client</p></a>
+	</nav>
+<!-- fin bandeau noir -->
+
+<!-- logo travel & pleasure -->
+	<div id="logo">
+		<img src="images-travel/logo-travel.JPG" alt="logo-travel">
+	</div>
+<!-- fin logo -->
+
+<!-- liens accueil site -->
+<header id="menuprincipal">
+	<div class="conteneur">
+		<ul>
+			<a href="index.html" class="choix"><li><span>Accueil</span></li></a>
+			<a href="vols_sejours.html"><li>Vols & Séjours</li></a>
+			<a href="vols.html"><li>Vols</li></a>
+			<a href="sejours.html"><li>Séjours</li></a>
+			<a href="services.html"><li>Services</li></a>
+			<a href="contact.html"><li>Contact</li></a>
+		</ul>
+	</div>
+</header>
+<!-- fin liens accueil -->
+
+<!-- contenu qui change de page en page -->
+<main id="contenu">
+
+<!-- image slider-->
+<div class="slider-wrapper theme-default">
+	<div id="slider" class="nivoSlider">
+		<img src="images-travel/photo1.JPG" alt="photo1" />
+		<img src="images-travel/photo2.JPG" alt="photo2" />
+		<img src="images-travel/photo3.JPG" alt="photo3" />
+		<img src="images-travel/photo4.JPG" alt="photo4" />
+	</div>
+</div>
+<!-- fin slider-->
+
+<section id="promo">
+<!-- titres photos -->
+	<article class="blocpromo">
+		<h3>Lune de miel</h3>
+		<h3>Voyages en famille</h3>
+		<h3>Croisières</h3>
+		<h3>Destinations</h3>
+	</article>
+<!-- fin titres photos-->
+
+<!-- 4 photos -->
+	<article class="blocpromo">	
+		<img src="images-travel/picto-lune.JPG" alt="picto-lune" />
+		<img src="images-travel/picto-famille.JPG" alt="picto-famille" />
+		<img src="images-travel/picto-croisiere.JPG" alt="picto-croisiere" />
+		<img src="images-travel/picto-carte.JPG" alt="picto-carte" />
+	</article>
+<!-- fin 4 photos -->
+
+<!-- paragraphes -->
+	<article class="blocpromo">
+		<p>Classiques, quasi légendaires, pour amoureux en quête de romantisme et de valeurs sûres. Le mythe de la lune de miel est né en Polynésie sur pilotis, en Italie en palarri, au Bostwana en lodge perché...</p>
+		<p>Les vacances en famille : un moment attendu toute l'année ! Parce qu'on n'a pas envie de la même chose à 2 ou 12 ans, notre sélection de voyages vise à satisfaire tous les goûts et tous les âges : des chauffe-biberons pour les plus jeunes des activités encadrées pour les turbulents ou de l'aventure douce pour les intrépides...</p>
+		<p>Voilier, catamaran, yacht, cargo mixte, dahabieh, brise-glce ou encore express cotier et pourquoi pas un petit paquebot... Tous les bateaux répondent à l'appel du large qu'inévitablement on ressent un jour que l'on soit contemplatif ou prêt pour la manoeuvre. Larguez les amarres.</p>
+		<p>Neiges européennes, plages lointaines : à chacun sa façon de suspendre le temps... Choisissez votre destination...</p>
+	</article>
+<!-- fin paragraphes -->
+		
+<!-- lien "lire la suite" -->
+	<article class="blocpromo">
+		<a href="lire_la_suite.html">Lire la suite</a>
+		<a href="lire_la_suite_2.html">Lire la suite</a>
+		<a href="lire_la_suite_3.html">Lire la suite</a>
+		<a href="#">Lire la suite</a>
+	</article>	
+<!-- fin "lire la suite" -->	
+</section>
+</main>
+
+<!-- logo FB & Twitter sur le côté -->
+<aside>
+	<a href="#"><p>Nous suivre</p></a>
+	<a href="#"><img src="images-travel/facebook.JPG" alt="facebook" /></a>
+	<a href="#"><img src="images-travel/twitter.JPG" alt="twitter" /></a>	
+</aside>
+<!-- fin logo FB & Twitter -->
+</div>
+<!-- fin page -->
+
+<!-- bandeau noir bas -->
+<footer id="bandeaubas">
+	<div id="contenu_bandeaubas">
+		<p>&copy; 2018-Tous droits réservés</p>
+		<a href="infos_legales.html"><p>Infos légales</p></a>
+	</div>
+</footer>
+<!-- fin bandeau noir bas -->
+
+<!-- scripts qui font le slider -->
+<script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({controlNav:false
+        })
+    });
+</script>
+<!-- fin scripts slider -->
+
+</body>
+</html>

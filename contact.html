@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" media="screen">
+</head>
+
+<body>
+<!-- page -->
+<div id="page">
+<!-- bandeau noir haut -->
+  <nav id="bandeauhaut">
+      <a href="#"><p>Blog</p></a><font color="#fff">|</font>
+      <a href="nous_contacter.html"><p>Nous contacter</p></a><font color="#fff">|</font>
+      <a href="#"><p>Newsletter</p></a><font color="#fff">|</font>
+      <a href="#"><p class="noborder">Site mobile</p></a>
+      <a href="#"><p class="noborder_client">&gt;&gt; Espace client</p></a>
+  </nav>
+<!-- fin bandeau noir -->
+
+<!-- logo travel & pleasure -->
+  <div id="logo">
+    <img src="images-travel/logo-travel.JPG" alt="logo-travel">
+  </div>
+<!-- fin logo -->
+
+<!-- liens accueil site -->
+<header id="menuprincipal">
+  <div class="conteneur">
+    <ul>
+      <a href="index.html"><li>Accueil</li></a>
+      <a href="vols_sejours.html"><li>Vols & Séjours</li></a>
+      <a href="vols.html"><li>Vols</li></a>
+      <a href="sejours.html"><li>Séjours</li></a>
+      <a href="services.html"><li>Services</li></a>
+      <a href="contact.html" class="choix"><li><span>Contact</span></li></a>
+    </ul>
+  </div>
+</header>
+<!-- fin liens accueil -->
+
+<main id="contenu-formulaire">
+  <div id="titre_haut">
+    <p class="petit">Nos coordonnées</p>
+    <p>Nous contacter</p>
+  </div>
+
+<div id="notreadresse">
+    <address>
+            Travel and Pleasure<br />
+            17 bis au Amiral Courbet<br />
+            56100 LORIENT<br />
+            France<br />
+            Téléphone:02 97 15 15 15
+    </address>
+ 
+  <div id="carte">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5375.8403521219525!2d-2.772854!3d47.647118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1e45bf9d89%3A0xf1b4ec0fcc4d768d!2s20+Rue+Winston+Churchill%2C+56000+Vannes!5e0!3m2!1sfr!2sfr!4v1539947410994" width="270" height="230" allowfullscreen></iframe>
+  </div>
+</div>
+
+<form action="envoyerform.php" method="post">
+  <fieldset class="coordonnees">
+    <legend>Vos Coordonnées</legend>
+        <p><input type="radio" name="civilite" id="M" value="M" checked /><label for="M" class="petit">M.</label>
+            <input type="radio" name="civilite" id="Mme" value="Mme" /><label for="Mme">Mme</label></p>
+        <p><label for="nom">Votre nom</label><input type="text" name="nom" id="nom" placeholder="Votre nom" /></p>
+        <p><label for="prenom">Votre prénom</label><input type="text" name="prenom" id="prenom" placeholder="Votre prénom" /></p>
+        <p><label for="adresse">Adresse</label><textarea name="adresse" id="adresse"></textarea></p>
+        <p><label for="Code Postal">Code Postal</label><input type="text" name="Code Postal" id="Code Postal" placeholder="CD" />
+            <label for="Ville">Ville</label><input type="text" name="Ville" id="Ville" placeholder="Ville" /></p>
+        <p><label for="pays">Votre pays</label>
+      <select name="pays" id="pays">
+        <option value="France">France</option>
+        <option value="italie">Italie</option>
+        <option value="chine">Chine</option>
+        <option value="japon" selected>Japon</option>
+      </select></p>
+  </fieldset>
+
+  <fieldset class="coordonnees">
+    <legend>Votre Message</legend>
+      <p>Votre message concerne<input type="checkbox" name="preference" id="Vols" value="Vols" /><label for="Vols" class="petit">Vols</label>
+        <input type="checkbox" name="preference" id="Sejour" value="Sejour" /><label for="Sejour" class="petit">Séjours</label>
+        <input type="checkbox" name="preference" id="Autres" value="Autres" /><label for="Autres">Autres</label></p>
+        <p><label for="message">Votre message</label><textarea rows="7" cols="50"name="message"id="message"placeholder="Votre message"></textarea></p>
+  </fieldset>
+  
+  <a href="#"><p class="bouton"><input type="submit" value="Envoyer" /></a>
+  <a href="#"><input type="reset" value="Annuler" /></p></a>
+</form>
+</main>
+
+<!-- logo FB & Twitter sur le côté -->
+<aside>
+  <a href="#"><p>Nous suivre</p></a>
+  <a href="#"><img src="images-travel/facebook.JPG" alt="facebook" /></a>
+  <a href="#"><img src="images-travel/twitter.JPG" alt="twitter" /></a>  
+</aside>
+<!-- fin logo FB & Twitter -->
+</div>
+<!-- fin page -->
+
+<!-- bandeau noir bas -->
+<footer id="bandeaubas">
+  <div id="contenu_bandeaubas">
+    <a href="#"><p>&copy; 2018-Tous droits réservés</p></a>
+    <a href="infos_legales.html"><p>Infos légales</p></a>
+  </div>
+</footer>
+<!-- fin bandeau noir bas --> 
+</body>
+</html>

@@ -1,0 +1,652 @@
+/*================== début partie commune ==================*/
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-image:url(images-travel/bandeau-haut.JPG);
+	background-repeat:repeat-x;
+}
+a{
+	text-decoration:none;
+}
+#page{
+	max-width:1101px;
+	width:100%;
+	margin:0 auto;
+}
+#page #bandeauhaut{
+	display:flex;
+	padding:12px;
+	justify-content:space-between;
+}
+#page #bandeauhaut p{
+	color:#fff;	
+	/*border-right:2px solid yellow;*/
+}
+#page #bandeauhaut p.noborder{
+	border:none;
+}
+#page #bandeauhaut p.noborder_client{
+	border:none;
+	margin-left:470px;
+}
+#page #bandeauhaut p:hover{
+	color:#708090;
+}
+#page #logo{
+	text-align:center;
+	margin:20px 0 30px;
+}
+#page #menuprincipal{
+	text-align:center;
+}
+#page #menuprincipal .conteneur{
+	height:50px;
+}
+#page #menuprincipal .conteneur ul li{
+	color:#000;
+	display:inline;
+	font-family:geogia;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:25px;
+}
+#page #menuprincipal .conteneur ul li:hover{
+	color:#d2b48c;
+}
+#page #menuprincipal li a.choix{
+	border-bottom:1px dashed #000;
+}
+#page #menuprincipal .conteneur span{
+	color:#d2b48c;
+	border-bottom:2px dotted #000;
+}
+#page #menuprincipal .conteneur span:hover{
+	color:#708090;
+}
+/*================== fin partie commune ==================*/
+
+/*================== début page accueil==================*/
+#contenu #slider{
+	width:100%;
+	margin:0 0 10px;
+}
+#contenu #promo .blocpromo{
+	display:flex;
+	justify-content:space-between;
+}
+#contenu #promo .blocpromo h3{
+	width:23%;
+	margin:5px 0;
+	text-align:center;
+	text-transform:uppercase;
+}
+#contenu #promo .blocpromo img{
+	width:23%;
+	margin-bottom:1%;
+}
+#contenu #promo .blocpromo p{
+	width:23%;
+	line-height:18px;
+	text-align:justify;
+}
+#contenu #promo .blocpromo a{
+	color:#d2b48c;
+	margin:8px 16% 0 0;
+}
+#contenu #promo .blocpromo a:hover{
+	color:#708090;
+}
+aside{
+	margin-top:45px;
+	text-align:right;
+}
+aside p{
+	color:#d2b48c;
+}
+aside p:hover{
+	color:#708090;
+}
+#bandeaubas{
+	background-image:url(images-travel/bandeau-bas.JPG);
+	background-repeat:repeat-x;
+	max-width:100%;
+	height:50px;
+}
+#bandeaubas #contenu_bandeaubas{
+	display:flex;
+}
+#bandeaubas #contenu_bandeaubas p{
+	color:#fff;
+	margin:12px 410px 0;
+}
+#bandeaubas #contenu_bandeaubas p:hover{
+	color:#708090;
+}
+/*================== fin page accueil ==================*/
+
+/*================== début partie séjours ==================*/
+
+#sejour{
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+}
+#sejour .promo_sejour{
+	width:49%;
+	display:flex;
+	flex-wrap:wrap;
+}
+#sejour .promo_sejour img{
+	padding-bottom:2%;
+}
+#sejour .promo_sejour .choisir{
+	padding-right:30%;
+	margin-top:3%;
+	margin-bottom:2%;
+}
+#sejour .promo_sejour .blocpromo_sejour{
+	width:49%;
+	height:140px;
+	box-sizing:border-box;
+	border:2px dotted #d2b48c;
+	margin-top:1%;
+	margin-right:1%;
+}
+#sejour .promo_sejour .blocpromo_sejour h4{
+	width:2%;
+	font-size:18px;
+	margin-left:1%;
+	float:left;
+}
+#sejour .promo_sejour .blocpromo_sejour img{
+	width:55%;
+	margin:2% 2%;
+	float:right;
+}
+#sejour .promo_sejour .blocpromo_sejour a{
+	color:#d2b48c;
+	font-size:15px;
+	padding-top:25%;
+	float:left;
+}
+#sejour .promo_sejour .blocpromo_sejour a:hover{
+	color:#708090;
+}
+/*================== fin partie séjour ==================*/
+
+/*================== début partie services ==================*/
+#services{
+	display:flex;
+	justify-content:space-between;
+}
+#services #promo_3{
+	width:70%;
+	height:50%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}	
+#services #promo_3 .blocpromo_3{
+	width:32%;
+ 	border:2px dotted #000;
+ 	margin-bottom:1%; 
+}
+#services #promo_3 .blocpromo_3 h1{
+	width:100%;
+	font-weight:bold;
+	margin-top:3%;
+	margin-left:2%;
+}
+#services #promo_3 .blocpromo_3 img{
+	float:right
+}
+#services #promo_3 .blocpromo_3 a{
+	color:#d6a86b;
+	float:left;
+	padding-top:25% /*repouser élément vers le bas */
+}
+#services #promo_3 .blocpromo_3 a:hover{
+	color:#708090;
+}
+#promo_3{
+ 	width:45%;
+}
+#services #promo_3 .blocpromo_3{
+ 	display: flex;
+ 	flex-wrap:wrap;
+ 	justify-content:flex-start;
+ 	justify-content:space-around;
+}
+/* partie pub-video */
+#services #droite{
+	width:25%;
+	display:flex;
+	flex-direction:column;
+	border:2px dotted black;
+}
+#services #droite img{	
+	width:100%;
+}
+#services #droite video{
+ width:100%;
+}
+/*================== fin partie services ==================*/
+
+/*================== début partie contact ==================*/
+#contenu-formulaire{
+  	width:100%;
+  	display:flex;
+  	flex-wrap:wrap;
+  	justify-content:space-between;
+}
+#contenu-formulaire #titre_haut{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+#contenu-formulaire #titre_haut p{
+	color:#d39f71;
+	width: 100%;
+}
+#contenu-formulaire #titre_haut p.petit{
+ 	width:53%;
+}
+#contenu-formulaire #carte{
+	padding-top:8%;
+}
+#contenu-formulaire .coordonnees{
+	width:100%;
+  	box-sizing:border-box;
+  	border:2px dotted grey;
+  	margin:20px 1%;
+  	padding:10px 100px 10px 10px;
+}
+#contenu-formulaire .coordonnees legend{
+  	color:grey;
+  	font-size:14px;
+  	font-weight:bold;
+}
+#contenu-formulaire .coordonnees p label{
+ 	width:140px;
+ 	margin:5px 0;
+ 	display:inline-block;
+}
+#contenu-formulaire .coordonnees p label:hover{
+	color:#d2b48c;
+}
+#contenu-formulaire .coordonnees p input{
+	background-color:darkseagreen;
+	border-radius:10px;
+}
+#contenu-formulaire .coordonnees p textarea{
+	background-color:darkseagreen;
+	border-radius:10px;
+}
+#contenu-formulaire p{
+  	margin:10px 0;
+}
+#contenu-formulaire .bouton input{
+	background-color:#d2b48c;
+	width:8%;
+	border-radius:10px;
+}
+/*================== fin partie contact ==================*/
+
+/*================== début partie vol ==================*/
+#vol{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+}
+#vol .promo_vol{
+	width:50%;
+	margin-top:3%;
+	box-sizing:border-box;
+	border:1px dashed #708090;
+	text-align:center;
+}
+#vol .promo_vol h2{
+	color:#000;
+	margin-bottom:3%;
+}
+#vol .promo_vol h2:hover{
+	color:#d2b48c;
+}
+#vol .promo_vol select{
+	background-color:#d2b48c;
+	display:flex;
+	flex-wrap:wrap;
+	text-align:center;
+}
+#vol .promo_vol select option{
+	padding-right:470px;
+	text-align:center;
+}
+#vol .promo_vol legend{
+	margin-top:4%;	
+}
+#vol #descriptif{
+	text-align:justify;
+	margin-top:4%;
+}
+/*================== fin partie vol ==================*/
+
+/*================== début partie vs ==================*/
+#vs{
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+}
+#vs .vsvs{
+	width:48%;
+	display:flex;
+	flex-wrap:wrap;
+	margin-top:3%;
+}
+#vs .vsvs h1{
+	color:#000;
+	border:3px dotted #708090;
+	margin-bottom:8%;
+}
+#vs .vsvs h1:hover{
+	color:#d2b48c;
+}
+#vs .vsvs p{
+	text-align:justify;
+	margin-top:3%;
+}
+/* sous menu */
+.bouton_liste {
+	color:#000;
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.bouton_liste:hover {
+	color:#d2b48c;
+}
+.bouton_vs {
+	position:relative;
+	display:inline-block;
+}
+.liste_vs {
+	color:#d2b48c;
+	display:none;
+}
+.liste_vs a {
+	color:#000;
+	padding:10px;
+	display:block;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.liste_vs a:hover {
+	color:#d2b48c;
+}
+.bouton_vs:hover .liste_vs {
+	display:block;
+}
+/*================== fin partie vs ==================*/
+
+/*================== début partie séjours de rêve ==================*/
+#reve{
+	max-width:100%;
+	border:3px solid #d2b48c;
+	padding:2%;
+}
+#reve #reve_ h1{
+	color:#d2b48c;
+	font-family:cursive;
+	text-decoration:underline;
+	text-align:center;
+	text-transform:uppercase;
+	padding-bottom:3%;
+}
+#reve #reve_ .reve_article{
+	display:flex;
+	justify-content:space-between;
+}
+#reve #reve_ .reve_article h2{
+	width:23%;
+	margin:5px 0;
+	text-align:center;
+	text-transform:uppercase;
+	border:2px dotted #708090;
+}
+#reve #reve_ .reve_article h3{
+	width:100%;
+	margin:5px 0;
+	text-align:center;
+	text-transform:uppercase;
+}
+#reve #reve_ .reve_article img{
+	width:23%;
+	margin-bottom:1%;
+}
+#reve #reve_ .reve_article p{
+	width:23%;
+	line-height:18px;
+	text-align:justify;
+}
+#reve #reve_ .reve_article a{
+	color:#d2b48c;
+	margin:5% 2%;
+}
+#reve #reve_ .reve_article a:hover{
+	color:#708090;
+}
+#reve #reve_ #slider{
+	width:55%;
+	height:30%;
+	margin:0 auto;
+}
+
+/*================== fin partie séjours de rêve ==================*/
+
+/*================== début partie vols discount ==================*/
+/*partie haut*/
+.discount{
+	display:flex;	
+	justify-content:space-between;
+}
+.carrephoto{
+	display:flex;
+	width:50%;
+} 
+.carrephoto img{
+	width:100%;
+	box-shadow:0px 10px 50px #aaa; 
+}
+#text1{
+	background-color:#d2b48c;
+	height:400px;
+	width:50%;
+	padding:20px;
+	display:flex;
+	flex-wrap:wrap;
+	text-align:center;
+	line-height:1.6em;
+	font-size:20px;
+	box-shadow:0px 10px 20px #aaa; 
+}
+/*fin parti haut*/
+
+/*partie bas*/
+.discount2{
+	display:flex;
+}
+#carrephoto2{
+	width:50%; 
+	display:flex;
+	box-shadow:0px 10px 20px #aaa; 
+} 
+#text2{
+	background-color:#d2b48c;
+	display:flex;	
+	text-align:center;
+	width:50%;
+	padding:60px;
+	box-shadow:0px 10px 20px #aaa; 
+}
+#text2 h1{
+	color:#000;
+	font-size:35px;
+}
+/*================== fin partie vols discount ==================*/
+
+/*================== début lire la suite ==================*/
+#suite img{
+	width:100%;
+}
+#suite p{
+	line-height:18px;
+	text-align:justify;
+	margin-top:1%;
+}
+#panda img{
+	width:3%;
+	padding:1% 35%;
+}
+
+/*================== début infos légales ==================*/
+#legales{
+	font-style:italic;
+	text-align:justify;
+}
+#legales h2{
+	color:#000;
+	background-color:#d2b48c;
+	text-align:center;
+	margin-bottom:3%;
+}
+#legales h2:hover{
+	color:#708090;
+}
+#legales li{
+	text-decoration:underline;
+	margin-bottom:1%;
+}
+#legales p{
+	margin-bottom:3%;
+}
+/*================== fin infos légales ==================*/
+
+/*================== début NC ==================*/
+#nous img{
+	width:12%;
+}
+
+/*================== script slider ==================*/
+.nivo-caption {
+	position:absolute;
+	left:380px;
+	top:150px;
+	bottom:0px;
+	background:transparent;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding:5px 10px;
+	opacity:0.8;
+	overflow:hidden;
+	display:none;
+	-moz-opacity:0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing:border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing:border-box;    /* Firefox, other Gecko */
+	box-sizing:border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	font-size:50px;
+	font-family:'megan_juneregular';
+	padding:5px;
+	margin:0;
+}
+.nivo-caption p.titreslide{
+	font-size:100px;
+	letter-spacing:15px;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/*================== fin scripts ==================*/
+
+/*================== médiaqueries ==================*/
+
+/* petite résolution */
+@media screen and (max-width:768px){
+	body{
+		background-color:green;
+	}
+	#page #bandeauhaut p, #contenu #slider{
+		display:none;
+	}
+	#page #bandeauhaut{
+		background-color:green;
+	}
+	#page #logo{
+		max-width:100%;
+		height:auto;
+	}
+	#page #menuprincipal .conteneur{
+		display:none;
+	}
+	#page #menuprincipal .conteneur:hover{
+		color:red;
+	}
+	#page #promo{
+		width:100%;
+	}
+	aside{
+		text-align:center;
+	}
+	#bandeaubas #contenu_bandeaubas p{
+		margin:0 auto;
+	}
+	#bandeaubas{
+		display:none;
+	}
+}
+
+/* résolution moyenne */
+@media screen and (min-width:769px) and (max-width:1100px){
+	body{
+		background-color:gray;
+	}
+	#contenu #promo{
+		flew-wrap:wrap;
+	}
+	aside{
+		text-align:center;
+	}
+}
+/* */
+
+/* grande résolution */
+@media screen and (max-width:1000px){
+	body{
+	
+	}
+	#bandeaubas{
+		position:fixed;
+	}
+}
+/* */
+
+@media screen and (min-width:1101px){
+	body{
+	
+	}
+}
+
+
+
+
+
+
+
